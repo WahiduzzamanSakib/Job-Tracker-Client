@@ -11,13 +11,20 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center gap-1 text-sm text-default-500">
-            Made with
+            Build By
             <FiHeart
               size={14}
               className="mx-1 text-danger"
               fill="currentColor"
             />
-            for better job hunting.
+            <a
+              href="www.linkedin.com/in/waheduzzaman-md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-105 transition duration-300 font-bold"
+            >
+              Md. Waheduzzaman
+            </a>
           </div>
         </div>
       </div>
