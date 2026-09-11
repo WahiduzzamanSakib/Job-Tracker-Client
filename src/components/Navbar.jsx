@@ -29,6 +29,17 @@ const Navbar = () => {
 
           <Button
             as={Link}
+            to="/dashboard"
+            variant="flat"
+            size="sm"
+            className="rounded-lg bg-blue-500/15 text-cyan-300 border border-blue-400/30 font-medium hover:bg-blue-500/25 transition-all"
+            startContent={<FiPlus size={16} />}
+          >
+           Dashboard
+          </Button>
+
+          <Button
+            as={Link}
             to="/jobs/add"
             variant="flat"
             size="sm"
