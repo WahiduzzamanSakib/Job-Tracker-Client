@@ -12,9 +12,14 @@ function App() {
       <Navbar />
       <main className="flex-1">
         <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/jobs/add" element={<Jobadd />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/"
+            element={<Hero />} />
+          <Route path="/jobs/add"
+            element={<Jobadd />}
+          />
+          <Route path="/dashboard"
+            element={<Dashboard />}
+          />
         </Routes>
       </main>
       <Footer />
