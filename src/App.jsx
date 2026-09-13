@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/"
             element={<Hero />} />
-          <Route path="/jobs/add"
+          <Route path="/jobs-add"
             element={<Jobadd />}
           />
           <Route path="/dashboard"

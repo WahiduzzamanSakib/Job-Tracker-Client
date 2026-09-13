@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@heroui/react";
-import {FiPlus, FiBriefcase, FiCheckCircle, FiTrendingUp, FiCalendar, FiDollarSign, FiClock,  FiShield, FiZap,} from "react-icons/fi";
+import { FiPlus, FiBriefcase, FiCheckCircle, FiTrendingUp, FiCalendar, FiDollarSign, FiClock, FiShield, FiZap, } from "react-icons/fi";
 
 const Hero = () => {
   const sampleJobs = [
@@ -36,17 +36,17 @@ const Hero = () => {
       <div className="pointer-events-none absolute top-1/3 -left-20 h-[350px] w-[350px] rounded-full bg-cyan-500/10 blur-[110px]" />
 
       {/* Subtle Grid Pattern Overlay */}
-      <div 
-        className="pointer-events-none absolute inset-0 opacity-[0.07]" 
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.07]"
         style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.7) 1px, transparent 0)`,
           backgroundSize: "32px 32px",
-        }} 
+        }}
       />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-8">
-          
+
           {/* Left Column: Hero Content */}
           <div className="text-center lg:col-span-7 lg:text-left">
             {/* Top Pill Badge */}
@@ -56,14 +56,14 @@ const Hero = () => {
                 <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-cyan-400"></span>
               </span>
               <span className="text-xs font-semibold uppercase tracking-wider text-cyan-300">
-                 Smart Job Tracking
+                Smart Job Tracking
               </span>
-             
+
             </div>
 
             {/* Headline */}
             <h1 className="mt-6 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-           Track Every Application, Land Your  {" "}
+              Track Every Application, Land Your  {" "}
               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-300 bg-clip-text text-transparent">
                 Dream Job
               </span>
@@ -71,28 +71,27 @@ const Hero = () => {
 
             {/* Description */}
             <p className="mt-6 max-w-2xl text-base text-slate-300 sm:text-lg lg:text-xl font-normal leading-relaxed">
-              Stop losing track of spreadsheets and missed emails. Organize your job search pipeline, 
+              Stop losing track of spreadsheets and missed emails. Organize your job search pipeline,
               prepare for upcoming interviews, and manage competitive salary offers in one premium workspace.
             </p>
 
             {/* CTA Buttons */}
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
-              <Button
-                as={Link}
-                to="/jobs/add"
-                color="primary"
-                size="lg"
-                className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 px-8 py-3.5 font-semibold text-white shadow-lg shadow-blue-500/30 transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/40"
-                startContent={
-                  <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-white/20">
-                    <FiPlus size={18} className="transition-transform group-hover:rotate-90 duration-300" />
-                  </div>
-                }
+              <Link
+                to="/jobs-add"
+                className="group relative inline-flex items-center gap-3 overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 px-8 py-3 font-semibold text-white shadow-lg shadow-blue-500/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/40"
               >
-                Add New Jobs
-              </Button>
+                <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-white/20">
+                  <FiPlus
+                    size={18}
+                    className="transition-transform duration-300 group-hover:rotate-90"
+                  />
+                </div>
 
-             
+                <span>Add New Jobs</span>
+              </Link>
+
+
             </div>
 
             {/* Highlights / Features List */}
@@ -111,7 +110,7 @@ const Hero = () => {
               </div>
             </div>
 
-           
+
           </div>
 
           {/* Right Column: Premium Interactive Glassmorphism Dashboard Preview */}
@@ -121,7 +120,7 @@ const Hero = () => {
 
             {/* Main Interactive Glass Card */}
             <div className="relative rounded-2xl border border-white/10 bg-slate-900/80 p-5 backdrop-blur-xl shadow-2xl sm:p-6">
-              
+
               {/* Card Header */}
               <div className="flex items-center justify-between border-b border-slate-800/80 pb-4">
                 <div className="flex items-center gap-3">
@@ -135,7 +134,7 @@ const Hero = () => {
                 </div>
 
                 <Link
-                  to="/jobs/add"
+                  to="/jobs-add"
                   className="flex items-center gap-1.5 rounded-lg bg-blue-600/30 hover:bg-blue-600/50 border border-blue-400/30 px-3 py-1.5 text-xs font-semibold text-cyan-300 transition"
                 >
                   <FiPlus size={14} />
@@ -232,7 +231,7 @@ const Hero = () => {
 
         </div>
 
-     
+
 
       </div>
     </section>
